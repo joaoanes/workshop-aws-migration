@@ -1,0 +1,27 @@
+[versions]
+aws-lambda-java-core = "1.2.3"
+aws-lambda-java-events = "3.11.4"
+aws-sdk-v1 = "1.12.740"
+dagger = "2.51"
+junit-jupiter = "5.10.2"
+assertj-core = "3.25.3"
+testcontainers = "1.19.7"
+logback-classic = "1.5.3"
+shadow = "8.1.1"
+
+[libraries]
+aws-lambda-java-core = { module = "com.amazonaws:aws-lambda-java-core", version.ref = "aws-lambda-java-core" }
+aws-lambda-java-events = { module = "com.amazonaws:aws-lambda-java-events", version.ref = "aws-lambda-java-events" }
+aws-sdk-v1-sqs = { module = "com.amazonaws:aws-java-sdk-sqs", version.ref = "aws-sdk-v1" }
+aws-sdk-v1-s3 = { module = "com.amazonaws:aws-java-sdk-s3", version.ref = "aws-sdk-v1" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj-core" }
+testcontainers-localstack = { module = "org.testcontainers:localstack", version.ref = "testcontainers" }
+testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback-classic" }
+
+[plugins]
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
